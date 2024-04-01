@@ -1,7 +1,7 @@
 import transactions from "@/calls/transactions";
-import Heading from "./heading";
+import Heading from "../components/heading";
 
-export default async function Transactions() {
+export default async function TransactionsPage() {
 	const data = await transactions();
 	const decodedWalletTransaction = data?.decodedWalletTransaction.result;
 	const transactionByHash = data?.transactionByHash?.result;
