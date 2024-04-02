@@ -13,12 +13,12 @@ export default async function blocks() {
 		});
 
 		// getBlockByDate
-		const blockByDate = await Moralis.EvmApi.block.getDateToBlock({
-			chain: "0x1",
-			date: "", // TODO: MISSING!
-		});
+		// const blockByDate = await Moralis.EvmApi.block.getDateToBlock({
+		// 	chain: "0x1",
+		// 	date: "currentDate", // TODO: MISSING!
+		// });
 
-		return { blockHash, blockByDate };
+		return { blockHash };
 	} catch (err) {
 		console.error(err);
 	}
