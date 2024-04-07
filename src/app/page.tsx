@@ -2,13 +2,7 @@ import { config } from "dotenv";
 import Image from "next/image";
 import Link from "next/link";
 import ethereumLogo from "../../public/ethereum.png";
-import Blocks from "./components/blocks";
-import Heading from "./components/heading";
-import Logs from "./components/logs";
-import Section from "./components/section";
-import Stats from "./components/stats";
 import { Button } from "./components/ui/button";
-import Transactions from "./transactions/page";
 config();
 
 export default function HomePage() {
@@ -30,6 +24,9 @@ export default function HomePage() {
 				</Button> */}
 						<Button asChild variant="purple">
 							<Link href="/stats">Stats</Link>
+						</Button>
+						<Button asChild variant="purple">
+							<Link href="/networth">Check NetWorth of a Wallet</Link>
 						</Button>
 					</div>
 				</div>
